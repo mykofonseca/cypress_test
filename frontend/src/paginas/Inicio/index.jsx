@@ -13,6 +13,9 @@ export default function Inicio() {
         <div className={estilos.conteudo}>
           <div className={estilos.banner}>
             <h1 data-test="titulo-principal">
+              <h6 data-test="sub-titulo">
+              Minha nossa, nossa, nossa!
+              </h6>
               Experimente mais liberdade no controle da sua vida financeira.
               Crie sua conta com a gente!
             </h1 >
