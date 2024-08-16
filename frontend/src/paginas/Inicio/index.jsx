@@ -24,7 +24,7 @@ export default function Inicio() {
                   </h5>
               </div>
             </h1 >
-            <img
+            <img data-test="imagem"
               src={ilustracaoBanner}
               alt="Gráficos e uma pessoa com dinheiro na mão"
             />
@@ -32,8 +32,8 @@ export default function Inicio() {
           <div data-test="vantagens" className={estilos.vantagens}>
             <h2>Vantagens do nosso banco:</h2>
             <div className={estilos.vantagens__itens}>
-              <div data-test="icone" className={estilos.vantagens__item}>
-                <img src={presente} alt="ícone de um presente" />
+              <div data-test="cartao" className={estilos.vantagens__item}>
+                <img data-test="imagem" src={presente} alt="ícone de um presente" />
                 <h3>Conta e cartão gratuitos</h3>
                 <p>
                   Isso mesmo, nossa conta é digital, sem custo fixo e mais que
@@ -41,23 +41,23 @@ export default function Inicio() {
                 </p>
               </div>
               <div data-test="saque" className={estilos.vantagens__item}>
-                <img  data-test="img_test" src={saque} alt="ícone de uma mão segurando um dinheiro" />
+                <img data-test="img_test" src={saque} alt="ícone de uma mão segurando um dinheiro" />
                 <h3>Saques sem custo</h3>
                 <p>
                   Você pode sacar gratuitamente 4x por mês de qualquer Banco
                   24h.
                 </p>
               </div>
-              <div className={estilos.vantagens__item}>
-                <img src={estrela} alt="ícone de uma estrela" />
+              <div data-test="programa" className={estilos.vantagens__item}>
+                <img data-test="imagem" src={estrela} alt="ícone de uma estrela" />
                 <h3>Programa de pontos</h3>
                 <p>
                   Você pode acumular pontos com suas compras no crédito sem
                   pagar mensalidade!
                 </p>
               </div>
-              <div className={estilos.vantagens__item}>
-                <img
+              <div data-test="seguro" className={estilos.vantagens__item}>
+                <img data-test="imagem"
                   src={dispositivo}
                   alt="ícone de um dispositivo como notebook"
                 />
