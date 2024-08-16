@@ -2,7 +2,7 @@ describe('Página Principal', () => {
   beforeEach( () => {
     cy.visit('http://localhost:3000/')
   })
-  it('Deve renderizar h1 com o texto!', () => {
+  it('Renderização de todas as seções e itens da página inicial', () => {
     cy.visit('http://localhost:3000')
     cy.getByData('titulo-principal').contains('Experimente mais liberdade no controle da sua vida financeira. Crie sua conta com a gente!');
     cy.getByData('sub-titulo').contains('Minha nossa, nossa, nossa!');
