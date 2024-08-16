@@ -24,16 +24,15 @@ export default function Inicio() {
                   </h5>
               </div>
             </h1 >
-            
             <img
               src={ilustracaoBanner}
               alt="Gráficos e uma pessoa com dinheiro na mão"
             />
           </div>
-          <div className={estilos.vantagens}>
+          <div data-test="vantagens" className={estilos.vantagens}>
             <h2>Vantagens do nosso banco:</h2>
             <div className={estilos.vantagens__itens}>
-              <div className={estilos.vantagens__item}>
+              <div data-test="icone" className={estilos.vantagens__item}>
                 <img src={presente} alt="ícone de um presente" />
                 <h3>Conta e cartão gratuitos</h3>
                 <p>
@@ -41,8 +40,8 @@ export default function Inicio() {
                   isso: sem tarifa de manutenção.
                 </p>
               </div>
-              <div className={estilos.vantagens__item}>
-                <img src={saque} alt="ícone de uma mão segurando um dinheiro" />
+              <div data-test="saque" className={estilos.vantagens__item}>
+                <img  data-test="img_test" src={saque} alt="ícone de uma mão segurando um dinheiro" />
                 <h3>Saques sem custo</h3>
                 <p>
                   Você pode sacar gratuitamente 4x por mês de qualquer Banco
