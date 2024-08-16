@@ -15,7 +15,7 @@ export default function Inicio() {
             <h1 data-test="titulo-principal">
               Experimente mais liberdade no controle da sua vida financeira.
               Crie sua conta com a gente!
-            </h1>
+            </h1 >
             <img
               src={ilustracaoBanner}
               alt="Gráficos e uma pessoa com dinheiro na mão"
