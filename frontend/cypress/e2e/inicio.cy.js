@@ -6,6 +6,6 @@ describe('Página Principal', () => {
     cy.visit('http://localhost:3000')
     cy.getByData('titulo-principal').contains('Experimente mais liberdade no controle da sua vida financeira. Crie sua conta com a gente!')
     cy.getByData('sub-titulo').contains('Minha nossa, nossa, nossa!')
-    
+    cy.matchElement('item_teste', 'div', 'Eita pega!');
   })
 })

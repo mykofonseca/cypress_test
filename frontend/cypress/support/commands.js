@@ -27,3 +27,11 @@
 Cypress.Commands.add('getByData', (seletor) => {
     return cy.get(`[data-test=${seletor}]`)
 })
+
+Cypress.Commands.add('matchElement', (dataTest, tag, regex) => {
+    const selector = `${tag}[data-test="${dataTest}"]`;
+
+    cy.get(selector)
+    .find('h5')
+    .should('contain', regex);
+});
