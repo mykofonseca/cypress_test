@@ -33,14 +33,6 @@ describe('Formulário cadastro', () => {
         cy.getByData('botao-enviar').click()
         cy.getByData('mensagem-erro').should('exist').and('have.text', 'O email digitado é inválido')
     })
-    
-    it('Verificar mensagem de e-mail inválido', () => {
-        cy.getByData('botao-cadastro').click()
-        cy.getByData('email-input').type('kendrick@email')
-        cy.getByData('senha-input').type('123456')
-        cy.getByData('botao-enviar').click()
-        cy.getByData('mensagem-erro').should('exist').and('have.text', 'O email digitado é inválido')
-    })
 
     it('Verificar mensagem de senha ausente', () => {
         cy.getByData('botao-cadastro').click()
@@ -49,7 +41,7 @@ describe('Formulário cadastro', () => {
         cy.getByData('mensagem-erro').should('exist').and('have.text', 'O campo de senha é obrigatório')
     })
 
-    // o campo 'Verificar mensagem de senha ausente' não consegue ser validado com a presença do nome de usuário por conta do modelo do site padrão.
+    // o campo 'Verificar mensagem de senha ausente' não consegue ser validado com a presença do nome de usuário por conta de alguma configuração do backend.
     // por algum motivo é possível cadastrar um usuário em um site sem a senha, apenas com o nome e o email.
 
     })
