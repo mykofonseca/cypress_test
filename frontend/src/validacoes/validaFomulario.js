@@ -6,16 +6,22 @@ async function validaDadosFormulario(user) {
       .string()
       .email('O email digitado é inválido')
       .required('O campo email é obrigatório'),
-    senha: yup.string().required('O campo de senha é obrigatório'),
+    senha: yup
+      .string()
+      .required('O campo de senha é obrigatório'),
   });
 
   let schemaCadastro = yup.object().shape({
-    nome: yup.string().required('O campo de nome é obrigatório'),
+    nome: yup
+      .string()
+      .required('O campo de nome é obrigatório'),
     email: yup
       .string()
       .email('O email digitado é inválido')
       .required('O campo email é obrigatório'),
-    senha: yup.string().required('O campo de senha é obrigatório'),
+    senha: yup
+      .string() 
+      .required('O campo de senha é obrigatório'),
   });
 
   try {
