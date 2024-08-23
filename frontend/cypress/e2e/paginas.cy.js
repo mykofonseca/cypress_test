@@ -1,5 +1,5 @@
-describe('Testando múltiplas páginas', () => {
-    it('Deve conseguir acessar a página de cartões', () => {
+describe('Carregamento inicial', () => {
+    it('Start', () => {
     cy.visit('/')
     })
     
