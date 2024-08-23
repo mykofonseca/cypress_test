@@ -25,7 +25,7 @@ export default function Formulario({ realizarTransacao }) {
   }
 
   return (
-    <form className={estilos.formulario} onSubmit={handleSubmit}>
+    <form data-test='form-inicio' className={estilos.formulario} onSubmit={handleSubmit}>
       <div>
         <h3 className={estilos.legenda__opcoes}>Nova Transação</h3>
         <select
