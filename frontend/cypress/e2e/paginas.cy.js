@@ -62,5 +62,3 @@ describe('Testando containers de ferramentas da página (Investimentos)', () => 
         cy.getByData('titulo-investimento').should('exist').and('have.text', 'Investimentos')
     })
 })
-
-
